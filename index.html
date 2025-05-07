@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Porto da Lua</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sections.css">
+</head>
+
+<body class="bg-white overflow-x-hidden">
+    <nav class="bg-[#1c1d24] fixed w-full z-20 top-0 start-0 border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/img/logoPorto.png" class="h-10" alt="ReserveNow Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Porto da<span
+                        class="text-[#ff9807]"> Lua</span></span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="https://wa.me/5591993691074" target="_blank"
+                    class="text-white bg-gradient-to-r from-[#ff9807] to-[#f7b252] hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-[#ff9807]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center shadow-lg shadow-[#ff9807]/30 transition-all duration-300">
+                    <i class="bi bi-whatsapp mr-2"></i>
+                </a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-gray-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="#inicio"
+                            class="block py-2 px-3 text-white rounded-lg md:bg-transparent md:text-[#ff9807] md:p-0 hover:text-[#f7b252] transition-colors duration-300"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services"
+                            class="block py-2 px-3 rounded-lg text-white hover:bg-gray-700 md:hover:bg-transparent md:hover:text-[#ff9807] md:p-0 transition-colors duration-300">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#sobre"
+                            class="block py-2 px-3 rounded-lg text-white hover:bg-gray-700 md:hover:bg-transparent md:hover:text-[#ff9807] md:p-0 transition-colors duration-300">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#como-funciona"
+                            class="block py-2 px-3 rounded-lg text-white hover:bg-gray-700 md:hover:bg-transparent md:hover:text-[#ff9807] md:p-0 transition-colors duration-300">Como
+                            Funciona</a>
+                    </li>
+                    <li>
+                        <a href="#contacts"
+                            class="block py-2 px-3 rounded-lg text-white hover:bg-gray-700 md:hover:bg-transparent md:hover:text-[#ff9807] md:p-0 transition-colors duration-300">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center px-4 py-20 md:py-32 fade-in" id="inicio">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute inset-0 bg-fixed bg-center bg-cover"
+                style="background-image: url('assets/img/entradaPorto.png');">
+                <div class="w-full h-full bg-[#0f0f11]/80"></div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 -z-5 hero-gradient"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center z-10">
+            <span
+                class="px-4 py-1 rounded-full bg-[#ff9807]/10 text-[#ff9807] text-sm font-medium mb-6 border border-[#ff9807]/20">
+                A melhor experiência em hospedagem para os seus dias de descanso.
+            </span>
+
+            <h1 class="mb-6 text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl">
+                Descanso, beleza e<br><span class="gradient-text">mar em um so lugar</span>
+            </h1>
+
+            <p class="mb-8 text-lg font-normal text-gray-300 max-w-3xl">
+                No Hotel Porto da Lua, nossa missão é oferecer uma experiência única de hospedagem, unindo conforto,
+                hospitalidade e uma vista encantadora. Seja para descanso, lazer ou trabalho, conectamos você a momentos
+                inesquecíveis em um ambiente acolhedor, que valoriza o bem-estar e a tranquilidade.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="home.php"
+                    class="px-8 py-4 text-base font-medium text-center text-white bg-gradient-to-r from-[#ff9807] to-[#f7b252] rounded-lg hover:bg-gradient-to-l focus:ring-4 focus:ring-[#ff9807]/50 shadow-lg shadow-[#ff9807]/30 transition-all duration-300 inline-flex items-center justify-center">
+                    Conheça mais
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+
+                <a href="#services"
+                    class="px-8 py-4 text-base font-medium text-center text-[#ff9807] bg-transparent border border-[#ff9807] rounded-lg hover:bg-[#ff9807]/10 focus:ring-4 focus:ring-[#ff9807]/30 transition-all duration-300">
+                    Nossos serviços
+                </a>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 hidden md:block">
+                <a href="#services" class="text-white hover:text-[#ff9807] transition-colors duration-300">
+                    <i class="bi bi-arrow-down text-2xl animate-bounce"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 bg-white" id="services">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-[#ff9807]/10 text-[#ff9807] text-sm font-medium mb-4">
+                    NOSSOS SERVIÇOS
+                </span>
+                <h2 class="text-3xl md:text-4xl text-black mb-4 porque">Por que escolher o <span
+                        class="text-[#ff9807]">Hotel Porto da Lua</span>?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Nosso hotel foi pensado para proporcionar a melhor
+                    experiência em conforto, tranquilidade e bem-estar à beira-mar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white-900/50 rounded-xl p-8  card-hover hidden-up">
+                    <div class="w-14 h-14 rounded-lg bg-[#ff9807]/10 flex items-center justify-center mb-6">
+                        <i class="bi bi-geo-alt text-2xl text-[#ff9807]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-black mb-3">Localização Privilegiada.</h3>
+                    <p class="text-gray-400">A poucos passos do mar, com uma vista encantadora e o som relaxante das
+                        ondas, o Hotel Porto da Lua oferece uma experiência única de tranquilidade e conexão com a
+                        natureza. Desperte todos os dias com a brisa fresca do oceano, aprecie paisagens de tirar o
+                        fôlego e aproveite momentos de descanso em um cenário paradisíaco.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white-900/50 rounded-xl p-8  card-hover hidden-up">
+                    <div class="w-14 h-14 rounded-lg bg-[#ff9807]/10 flex items-center justify-center mb-6">
+                        <i class="bi bi-tsunami text-2xl text-[#ff9807]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-black mb-3">Tranquilidade em Meio à Natureza</h3>
+                    <p class="text-gray-400">Desconecte-se da correria do dia a dia e aproveite momentos de paz cercado
+                        por uma natureza exuberante, com muito verde, ar puro e a brisa revigorante do litoral. No Hotel
+                        Porto da Lua, cada instante é um convite ao relaxamento e ao bem-estar, longe do estresse e
+                        perto do que realmente importa: você e sua tranquilidade.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white-900/50 rounded-xl p-8  card-hover hidden-up">
+                    <div class="w-14 h-14 rounded-lg bg-[#ff9807]/10 flex items-center justify-center mb-6">
+                        <i class="bi bi-balloon-heart-fill text-2xl text-[#ff9807]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-black mb-3">Romance à Beira-Mar</h3>
+                    <p class="text-gray-400">Um cenário perfeito para momentos especiais a dois, com o charme único de
+                        um ambiente acolhedor e a privacidade que você merece. No Hotel Porto da Lua, cada detalhe é
+                        pensado para tornar sua estadia romântica inesquecível, desde o pôr do sol à beira-mar até o
+                        conforto de acomodações preparadas para surpreender.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slideOferecimento">
+        <main>
+            <div class="containerSlide">
+                <div class="carrossel">
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Descubra o conforto de estar à beira-mar.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">O refúgio perfeito para corpo e alma.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Hospitalidade que abraça.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Experiência única em cada detalhe.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Caminhe descalço e sinta a liberdade.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">A natureza é nosso maior luxo.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Aqui, o tempo desacelera com você.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Mais do que hospedagem, memórias.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Paraíso existe, e começa aqui.</h6>
+                    </div>
+                    <div class="itemSlider">
+                        <h6 class="itemSlide">Hospede-se onde o mar encontra a paz.</h6>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-4 bg-white relative overflow-hidden" id="sobre">
+        <div class="absolute inset-0 -z-10 bg-[url('assets/img/fundoSection.png')] bg-cover bg-center opacity-30"></div>
+
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-left">
+                    <img class="rounded-lg shadow-xl shadow-[#ff9807]/10 w-full max-w-lg mx-auto transform hover:scale-105 transition-transform duration-500"
+                        src="assets/img/hidroPorto2.jpeg" alt="Sistema ReserveNow">
+                </div>
+
+                <div class="slide-in-right">
+                    <span
+                        class="inline-block px-3 py-1 rounded-full bg-[#ff9807]/10 text-[#ff9807] text-sm font-medium mb-4">
+                        SOBRE O PORTO DA LUA
+                    </span>
+                    <h2 class="text-3xl md:text-4xl text-black mb-6 porque">Descubra o paraiso no Hotel Porto da Lua.
+                    </h2>
+
+                    <p class="text-gray-600 mb-6">
+                        No Hotel Porto da Lua, cada detalhe foi pensado para oferecer uma experiência única à beira-mar.
+                        Nossa localização privilegiada proporciona uma vista deslumbrante do oceano, com o som suave das
+                        ondas acompanhando cada momento da sua estadia.
+                    </p>
+
+                    <p class="text-gray-600 mb-8">
+                        Seja para relaxar em meio à natureza, celebrar momentos a dois ou curtir com a família, aqui
+                        você encontra o equilíbrio ideal entre tranquilidade, romantismo e bem-estar. A beleza natural
+                        ao redor se une ao conforto das acomodações para transformar sua viagem em lembranças
+                        inesquecíveis.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
+                                    <i class="bi bi-tree-fill text-[#ff9807]"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-black font-medium">Conexão com a Natureza</h4>
+                                <p class="text-gray-600 text-sm">Desacelere e respire ar puro.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
+                                    <i class="bi bi-vignette text-[#ff9807]"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-black font-medium">Momentos Inesquecíveis</h4>
+                                <p class="text-gray-600 text-sm">O ambiente perfeito para celebrar o amor.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
+                                    <i class="bi bi-brightness-alt-high-fill text-[#ff9807]"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-black font-medium">Vistas Deslumbrantes</h4>
+                                <p class="text-gray-600 text-sm">Cenários que encantam a cada amanhecer.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mr-3">
+                                <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
+                                    <i class="bi bi-globe-americas text-[#ff9807]"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-black font-medium">Aventura e Relaxamento</h4>
+                                <p class="text-gray-600 text-sm">Equilíbrio perfeito entre lazer e descanso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 px-4" id="como-funciona">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-[#ff9807]/10 text-[#ff9807] text-sm font-medium mb-4">
+                    PROCESSO SIMPLIFICADO
+                </span>
+                <h2 class="text-3xl md:text-4xl text-black mb-4 porque">Como <span
+                        class="text-[#ff9807]">Funciona</span>?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Em apenas alguns passos simples, você estará pronto para
+                    participar dos melhores eventos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="timeline">
+                        <!-- Step 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-item-badge">
+                                <i class="bi bi-1-circle-fill text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-black mb-2">Iniciar Conversa</h3>
+                            <p class="text-gray-400">Entre em contato com a equipe do hotel e tire suas dúvidas
+                                diretamente pelo chat.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-item-badge">
+                                <i class="bi bi-2-circle-fill text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-black mb-2">Informar Dados</h3>
+                            <p class="text-gray-400">Forneça suas informações pessoais para dar início à sua reserva.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-item-badge">
+                                <i class="bi bi-3-circle-fill text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-black mb-2">Escolher Quarto</h3>
+                            <p class="text-gray-400">Selecione o tipo de quarto ideal, a quantidade desejada e informe o
+                                número de hóspedes.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-item-badge">
+                                <i class="bi bi-4-circle-fill text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-black mb-2">Confirmar Reserva</h3>
+                            <p class="text-gray-400">Revise todos os detalhes e confirme sua hospedagem com
+                                tranquilidade.</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-item-badge">
+                                <i class="bi bi-5-circle-fill text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Receber Confirmação</h3>
+                            <p class="text-gray-400">Aguarde a mensagem de confirmação com todos os dados da sua
+                                reserva.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 flex justify-center hidden-aparece">
+                    <img class="w-full max-w-md transform hover:rotate-3 transition-transform duration-500"
+                        src="assets/img/cliente.png" alt="Usuário ReserveNow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Avaliations-->
+    <section class="bg-gray-100 min-h-screen px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl text-black font-semibold mb-4">
+                Eles vieram,<span class="text-[#ff9807]"> se encantaram e compartilharam</span>?
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Conforto, atendimento e vista para o mar: veja o que faz nossos hóspedes voltarem.
+            </p>
+        </div>
+        <div class="carousel-container overflow-hidden w-full max-w-6xl px-4 relative mx-auto">
+            <div class="carousel-track flex transition-transform duration-500 ease-in-out">
+                <div class="flex">
+                    <!-- Card 1 -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">O atendimento é o que há de melhor, as atendentes são muito
+                            simpáticas e prestativas. Os quartos são simples, tem Wi-Fi, tem estacionamento, a área
+                            externa do hotel é agradável e o café da manhã é variado. Certamente voltarei.</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Paulo Godinho</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">Sem palavras para descrever esse local, maravilhoso, temos acesso
+                            a uma praia (particular) quartos limpos e espaçosos, espaço com piscina e hidromassagem, por
+                            um valor bem acessível, e o atendimento muito top, fazem você se sentir em casa, amei a
+                            experiência e pretendo voltar</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Ingrid Farias</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">Eu super recomendo o hotel, fui passar um fim de semana com a
+                            amigos, mas quero voltar novamente com minha família, é um local muito lindo, quarto
+                            confortável com ar condicionado, com café da manhã maravilhoso, e o atendimento maravilhoso,
+                            adorei a proprietária de lá e os funcionários, só tenho que agradecer a recepção.</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Adrienne Magno</p>
+                    </div>
+
+                    <!-- Repetição para o efeito infinito -->
+                    <!-- Card 1 (duplicado) -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">Amei o lugar! É belíssimo! ambiente aconchegante, acolhedor e
+                            super confortável! e o melhor de tudo é a vista que é de frente para o mar! na praia de
+                            Maruda.</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Lorena Martins</p>
+                    </div>
+
+                    <!-- Card 2 (duplicado) -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">Lugar simples mas encantador , quarto aconchegante com TV, ar
+                            condicionado Split, frigobar e Wi-Fi. Funcionários super simpáticos e educados, comida
+                            estava deliciosa. Vista pro mar maravilhosa. Recomendo.</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Nazaré Rocha</p>
+                    </div>
+
+                    <!-- Card 3 (duplicado) -->
+                    <div class="min-w-[300px] max-w-[300px] m-4 bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-orange-400 text-3xl">“</div>
+                        <p class="text-gray-700 my-4">Hotel muito acolhedor, com boas instalações. Atendimento
+                            excelente. Funcionários muito prestativos, gentis e simpáticos. Agradeço todo o serviço
+                            prestado. Pretendo voltar mais vezes.</p>
+                        <img src="assets/img/user (1).png" alt="avatar"
+                            class="w-16 h-16 mx-auto rounded-full border-2 border-gray-300 mb-2" />
+                        <p class="text-gray-800 font-semibold">Brenda Naiara</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-[#ff9807]/10 to-[#f7b252]/10 border-t border-b border-gray-800">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl text-black mb-6 porque">Pronto para começar sua jornada?</h2>
+            <p class="text-gray-600 mb-8 max-w-3xl mx-auto">
+                Junte-se a centenas de hóspedes que já estão vivendo experiências inesquecíveis no nosso hotel.
+            </p>
+            <a href="home.php"
+                class="px-8 py-4 text-base font-medium text-center text-white bg-gradient-to-r from-[#ff9807] to-[#f7b252] rounded-lg hover:bg-gradient-to-l focus:ring-4 focus:ring-[#ff9807]/50 shadow-lg shadow-[#ff9807]/30 transition-all duration-300 inline-flex items-center justify-center pulse">
+                Começar agora
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer hidden-up" id="contacts">
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#inicio">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#services">Serviços</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sobre">Sobre</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacts">Contato</a></li>
+            </ul>
+
+            <div class="flex justify-center gap-4 my-4">
+                <a href="https://www.facebook.com/share/164L6xP7yj/"
+                    class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="bi bi-facebook text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/hotelportodaluamaruda?igsh=MXJ0NHpncmFnMWoxcA=="
+                    class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="bi bi-instagram text-xl"></i>
+                </a>
+                <a href="tel:+5591985668050" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="bi bi-telephone-plus-fill text-xl"></i>
+                </a>
+            </div>
+
+            <p>&copy;2025 PortoDaLua | Todos os direitos reservados</p>
+        </footer>
+    </section>
+
+    <script src="assets/scripts/scroll.js"></script>
+    <script src="assets/scripts/servicos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>

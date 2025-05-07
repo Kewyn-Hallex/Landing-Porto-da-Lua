@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mandali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/LandingIMG2.png');
+    opacity: 0.6;
+    /* ajuste aqui a opacidade desejada */
+    z-index: -1;
+    /* deixa a imagem atrás do conteúdo */
+}
+
+.textAQUI {
+    text-align: center;
+}
+
+.containerH1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textSerEventos {
+    color: aliceblue;
+    font-size: 3.5rem;
+    font-family: "Cascadia Mono", sans-serif;
+    font-weight: 700;
+}
+
+.containerIncentivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: nowrap;
+}
+
+.itemIncentivo {
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemIncentivo i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #6366F1;
+}
+
+.itemIncentivo h5 {
+    color: aliceblue;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+
+}
+
+.itemIncentivo {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.section3 {
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/geometric.png');
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerSistema {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    /* permite adaptar em telas pequenas */
+}
+
+.notebookIMG {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 12px #6365f146);
+}
+
+.textoSistema {
+    flex: 1;
+    text-align: left;
+    color: aliceblue;
+}
+
+.textTitulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.containerTextComoFunciona {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTextComoFunciona h2 {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 50px;
+}
+
+.containerTextComoFunciona h2 span {
+    color: #6366F1;
+}
+
+.section4 {
+    width: 100%;
+    height: 700px;
+    background-color: #0f0f11;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*EFEITOS HIDDENS*/
+
+.hidden-aparece {
+    transform: scale(0.5);
+    /* Começa pequeno, como se estivesse longe */
+    opacity: 0;
+    /* Invisível no início */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    will-change: transform, opacity;
+    /* Otimiza a animação */
+}
+
+.show-aparece {
+    transform: scale(1);
+    /* Volta ao tamanho normal */
+    opacity: 1;
+    /* Fica visível */
+}
+
+/* Efeito de baixo para cima */
+.hidden-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.show-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito da esquerda para a direita */
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease;
+}
+
+.show-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #1a1a1d;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+/* Novos estilos do index.php */
+:root {
+    --primary: #ff9807;
+    --primary-dark: #ff9807;
+    --dark-bg: #0f0f11;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #f7b252, #ff9807);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(95, 77, 52, 0.08) 0%, rgba(15, 15, 17, 0.9) 100%);
+    border-radius: 0 0 50% 0;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(255, 152, 7, 0.3);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 152, 7, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+    }
+}
+
+/* Timeline styling */
+.timeline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    border-left: 3px solid var(--primary);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+}
+
+.timeline-item-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    left: -22px;
+    top: 1.5rem;
+}
+
+.porque {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.slideOferecimento {
+    width: 100%;
+    background-color: #ff9807;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: -8px;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.containerSlide {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #ff9807;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Carrossel animado */
+.carrossel {
+    display: flex;
+    gap: 80px;
+    animation: slideText 30s linear infinite;
+    will-change: transform;
+    white-space: nowrap;
+}
+
+.itemSlider {
+    flex-shrink: 0;
+}
+
+.itemSlide {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+/* Animação */
+@keyframes slideText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .itemSlide {
+        font-size: 16px;
+    }
+
+    .carrossel {
+        gap: 40px;
+        animation: slideText 25s linear infinite;
+    }
+
+    .containerSlide {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .itemSlide {
+        font-size: 14px;
+    }
+
+    .carrossel {
+        gap: 50px;
+        animation: slideText 20s linear infinite;
+    }
+
+    .containerSlide {
+        height: 70px;
+    }
+}
+
+/*Avaliations*/
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scrollCarousel 30s linear infinite;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
