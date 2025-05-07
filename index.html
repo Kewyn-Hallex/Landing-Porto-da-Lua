@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/sections.css">
@@ -215,13 +216,89 @@
 
     <!-- About Section -->
     <section class="py-20 px-4 bg-white relative overflow-hidden" id="sobre">
-        <div class="absolute inset-0 -z-10 bg-[url('assets/img/fundoSection.png')] bg-cover bg-center opacity-30"></div>
-
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto ">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="slide-in-left">
-                    <img class="rounded-lg shadow-xl shadow-[#ff9807]/10 w-full max-w-lg mx-auto transform hover:scale-105 transition-transform duration-500"
-                        src="assets/img/hidroPorto2.jpeg" alt="Sistema ReserveNow">
+                <div id="default-carousel"
+                    class="relative w-full max-w-lg mx-auto shadow-xl shadow-[#ff9807]/10 rounded-lg"
+                    data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Slide 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider1.jpeg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider2.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider3.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 3">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider4.jpeg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 4">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider5.jpeg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 4">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/img/slider6.jpeg"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                                alt="Imagem 4">
+                        </div>
+                    </div>
+
+                    <!-- Indicadores -->
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 6"
+                            data-carousel-slide-to="5"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 7"
+                            data-carousel-slide-to="6"></button>
+                    </div>
+
+                    <!-- Botões -->
+                    <button type="button"
+                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                        </span>
+                    </button>
                 </div>
 
                 <div class="slide-in-right">
@@ -249,48 +326,48 @@
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mr-3">
                                 <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
-                                    <i class="bi bi-tree-fill text-[#ff9807]"></i>
+                                    <i class="bi bi-wifi text-[#ff9807]"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-black font-medium">Conexão com a Natureza</h4>
-                                <p class="text-gray-600 text-sm">Desacelere e respire ar puro.</p>
+                                <h4 class="text-black font-medium">Wi-Fi Liberado</h4>
+                                <p class="text-gray-600 text-sm">Conecte-se quando quiser, onde estiver.</p>
                             </div>
                         </div>
 
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mr-3">
                                 <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
-                                    <i class="bi bi-vignette text-[#ff9807]"></i>
+                                    <i class="bi bi-p-circle-fill text-[#ff9807]"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-black font-medium">Momentos Inesquecíveis</h4>
-                                <p class="text-gray-600 text-sm">O ambiente perfeito para celebrar o amor.</p>
+                                <h4 class="text-black font-medium">Estacionamento</h4>
+                                <p class="text-gray-600 text-sm">Segurança e praticidade para o seu veículo.</p>
                             </div>
                         </div>
 
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mr-3">
                                 <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
-                                    <i class="bi bi-brightness-alt-high-fill text-[#ff9807]"></i>
+                                    <i class="bi bi-egg-fried text-[#ff9807]"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-black font-medium">Vistas Deslumbrantes</h4>
-                                <p class="text-gray-600 text-sm">Cenários que encantam a cada amanhecer.</p>
+                                <h4 class="text-black font-medium">Café da Manhã</h4>
+                                <p class="text-gray-600 text-sm">Sabores especiais para começar bem o dia.</p>
                             </div>
                         </div>
 
                         <div class="flex items-start">
                             <div class="flex-shrink-0 mr-3">
                                 <div class="w-10 h-10 rounded-full bg-[#ff9807]/10 flex items-center justify-center">
-                                    <i class="bi bi-globe-americas text-[#ff9807]"></i>
+                                    <i class="bx bxs-dog text-[#ff9807]"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-black font-medium">Aventura e Relaxamento</h4>
-                                <p class="text-gray-600 text-sm">Equilíbrio perfeito entre lazer e descanso.</p>
+                                <h4 class="text-black font-medium">Pets Bem-Vindos</h4>
+                                <p class="text-gray-600 text-sm">Seu melhor amigo também é bem-vindo aqui.</p>
                             </div>
                         </div>
                     </div>
@@ -377,10 +454,10 @@
     </section>
 
     <!--Avaliations-->
-    <section class="bg-gray-100 min-h-screen px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl text-black font-semibold mb-4">
-                Eles vieram,<span class="text-[#ff9807]"> se encantaram e compartilharam</span>?
+    <section class="bg-gray-100 min-h-[80vh] px-4 flex flex-col justify-center items-center">
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl text-black mb-4 porque">
+                Eles vieram,<span class="text-[#ff9807]"> se encantaram e compartilharam</span>
             </h2>
             <p class="text-gray-400 max-w-2xl mx-auto">
                 Conforto, atendimento e vista para o mar: veja o que faz nossos hóspedes voltarem.
@@ -462,6 +539,25 @@
         </div>
     </section>
 
+    <section class="bg-gray-100 min-h-screen px-4">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl md:text-3xl text-black mb-4 porque">
+                Descubra nossa <span class="text-[#ff9807]">Localização.</span>
+            </h3>
+            <p class="text-gray-500 max-w-xl mx-auto">
+                Encontre-nos facilmente com a integração do Google Maps.
+            </p>
+        </div>
+
+        <div class="flex justify-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.575333978254!2d-47.633793999999995!3d-0.6323452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a63cf43ebe0653%3A0x18ba14e48902ad33!2sHotel%20Porto%20da%20Lua%20Marud%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1746640058647!5m2!1spt-BR!2sbr"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                class="rounded-xl shadow-md max-w-6xl w-full px-4">
+            </iframe>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-16 px-4 bg-gradient-to-r from-[#ff9807]/10 to-[#f7b252]/10 border-t border-b border-gray-800">
         <div class="max-w-5xl mx-auto text-center">
@@ -518,6 +614,7 @@
     <script src="assets/scripts/scroll.js"></script>
     <script src="assets/scripts/servicos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>

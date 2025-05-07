@@ -181,7 +181,7 @@ html {
 /* Efeito de baixo para cima */
 .hidden-up {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
     transition: all 0.8s ease;
 }
 
@@ -566,7 +566,7 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: scrollCarousel 30s linear infinite;
+    animation: scrollCarousel 10s linear infinite;
 }
 
 @keyframes scrollCarousel {
@@ -577,4 +577,8 @@ body {
     100% {
         transform: translateX(-50%);
     }
+}
+
+#default-carousel {
+    z-index: 1;
 }
